@@ -1,37 +1,3 @@
-// import React, { useContext } from 'react'
-// import { useParams } from 'react-router-dom'
-// import { magzineContext } from '../Context/Context'
-
-// function Genre() {
-//   const { genreName } = useParams() 
-//   const { data } = useContext(magzineContext)
-
-//   const filteredMovies = data.filter(movie => 
-//     movie.genres.includes(genreName)
-//   )
-
-//   return (
-//     <div>
-//       <h1>{genreName} Movies</h1>
-      
-//         {filteredMovies.map(movie => (
-//           <div key={movie.id} className="w-full h-30 border-3 border-green-500 ">
-//                   <img 
-//                     className="bg-red-700 w-[100px] "
-//                     src={movie.image?.medium || 'https://via.placeholder.com/210x295?text=No+Image'} 
-//                     alt={movie.name} 
-//                   />
-//                   <p className="bg-red-700">{movie.name}</p>
-//                 </div>
-
-//         ))}
-      
-//     </div>
-//   )
-// }
-
-// export default Genre
-
 import React, { useContext } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { magzineContext } from '../Context/Context'
