@@ -1,10 +1,9 @@
 import React from 'react'
-import Header from './Components/Header/Header'
 import Home from './Components/Home/Home';
 import { Routes,Route } from 'react-router-dom';
 import MovieDetails from './Components/MovieDetails/MovieDetails';
 import Genre from './Components/genre/genre';
-
+import Header from "./Components/Header/Header"
 
 function App() {
   return (
