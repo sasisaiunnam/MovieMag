@@ -1,0 +1,77 @@
+/* Container for the whole page */
+.home-container {
+  padding: 20px;
+  background-color: #0f172a; /* Dark slate background */
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Individual Genre Section */
+.genre-section {
+  margin-bottom: 40px;
+}
+
+.genre-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  border-left: 4px solid #3b82f6; /* Blue accent */
+  padding-left: 10px;
+}
+
+/* The Horizontal Scroll Wrapper */
+.movie-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding-bottom: 15px;
+  scroll-behavior: smooth;
+}
+
+/* Individual Movie Card */
+.movie-card {
+  min-width: 160px;
+  max-width: 160px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.movie-poster {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.movie-name {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds "..." for long titles */
+}
+
+/* Custom Scrollbar for a cleaner look */
+.movie-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.movie-row::-webkit-scrollbar-track {
+  background: #3b281e;
+  border-radius: 10px;
+}
+
+.movie-row::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
+
+.movie-row::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
